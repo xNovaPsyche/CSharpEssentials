@@ -4,7 +4,6 @@ public class Program
 {
     public Weapon goheiStaff;
     public SpellCard weaponSpellCard;
-    public Debuff heroDebuff;
     
     public void Main()
     {
@@ -15,8 +14,6 @@ public class Program
         goheiStaff.firePower += weaponSpellCard.powerLevel;
         Console.WriteLine(goheiStaff.weaponName + " has a bullet count of " + goheiStaff.bulletCount + ".");
         Console.WriteLine("Spellcard magic enhance is now " + goheiStaff.firePower + "!");
-        goheiStaff.firePower += heroDebuff.powerLevel;
-        Console.WriteLine("Player has been weakened " + goheiStaff.firePower + "!");
     }
 }
 public class Weapon {
@@ -27,7 +24,3 @@ public class Weapon {
 public class SpellCard {
     public float powerLevel = 33.5f;
    }
-public class Debuff {
-    public float powerLevel = -25.5f;
-    
-}
