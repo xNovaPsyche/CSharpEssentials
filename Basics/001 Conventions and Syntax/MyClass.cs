@@ -4,6 +4,7 @@ public class Program
 {
     public Weapon goheiStaff;
     public SpellCard weaponSpellCard;
+    public Debuff heroDebuff;
     
     public void Main()
     {
@@ -13,7 +14,9 @@ public class Program
         goheiStaff.bulletCount += 50;
         goheiStaff.firePower += weaponSpellCard.powerLevel;
         Console.WriteLine(goheiStaff.weaponName + " has a bullet count of " + goheiStaff.bulletCount + ".");
-        Console.WriteLine("Players magic enhance is now " + goheiStaff.firePower + "!");
+        Console.WriteLine("Spellcard magic enhance is now " + goheiStaff.firePower + "!");
+        goheiStaff.firePower += heroDebuff.powerLevel;
+        Console.WriteLine("Player has been weakened " + goheiStaff.firePower + "!");
     }
 }
 public class Weapon {
@@ -23,30 +26,8 @@ public class Weapon {
 }
 public class SpellCard {
     public float powerLevel = 33.5f;
-    public class Heroes
-{
-	public class Program
-    {
-    public Reimu shrineMaiden;
-	public Remilia mistressVampire;
-	
-	public void Main()
-	{
-		shrineMaiden = new Reimu();
-		mistressVampire = new Remilia();
-		
-		shrineMaiden.health = 25;
-		shrineMaiden.powerLevel = 50;
-		
-		mistressVampire.health = 100;
-		mistressVampire.powerLevel = 80;
-		
-		Console.WriteLine(shrineMaiden.health);
-		Console.WriteLine(shrineMaiden.powerLevel);
-		
-		Console.WriteLine(mistressVampire.health);
-		Console.WriteLine(mistressVampire.powerLevel);
-	}
-}
-}
+   }
+public class Debuff {
+    public float powerLevel = -25.5f;
+    
 }
