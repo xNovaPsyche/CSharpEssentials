@@ -6,10 +6,12 @@ namespace MyApplication
   {
     static void Main(string[] args)
     {
-      string name = "Anthony";
+      string name = "Emily";
       Console.WriteLine(name); 
-      int number = 11;
-      Console.WriteLine(number);
+      int myNum = 11037;
+      Console.WriteLine(myNum);
+      myNum = 20; // myNum is now 20
+      Console.WriteLine(myNum);
      }
   }
 }
