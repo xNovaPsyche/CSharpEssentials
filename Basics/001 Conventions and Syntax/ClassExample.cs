@@ -1,6 +1,6 @@
 public class ClassExample
 {
-    public int numberCount;
+    public int numberCountForHealth;
 }
 
 public class ClassWithVariables
