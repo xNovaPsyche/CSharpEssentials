@@ -23,4 +23,29 @@ public class Weapon {
 }
 public class SpellCard {
     public float powerLevel = 33.5f;
-   }
+   }					
+public class Heroes
+{
+	public Hero heroOne;
+	public Hero heroTwo;
+	
+	public void Main()
+	{
+		heroOne = new Hero();
+		heroTwo = new Hero();
+		
+		heroOne.health = 25;
+		
+		heroTwo.health = 100;
+		
+		Console.WriteLine(heroOne.health);
+
+		
+		Console.WriteLine(heroTwo.health);
+	}
+}
+
+public class Hero {
+	public int health = 25;
+	public string heroName = "Reimu Harukei";
+}
