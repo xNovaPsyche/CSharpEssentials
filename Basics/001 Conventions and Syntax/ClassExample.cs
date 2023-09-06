@@ -1,4 +1,4 @@
-public class ClassExample
+public class ClassPractice
 {
     public int numberCountForHealth;
 }
