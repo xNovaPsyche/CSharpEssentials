@@ -1,33 +1,31 @@
-//Use this file to store your work to demonstrate your understanding of operators
-//Make sure your work is different from the instructors examples or your peers
-
 using System;
 					
 public class Program
 {
-    public Hero heroOne;
-    public Hero heroTwo;
+	public Hero shrineMaiden;
+	public Hero Vampire;
 	
-    public void Main()
-    {
-        heroOne = new Hero();
-        heroTwo = new Hero();
+	public void Main()
+	{
+		shrineMaiden = new Hero();
+		Vampire = new Hero();
 		
-        heroOne.health = 2;
-        heroOne.powerLevel = 5;
+		shrineMaiden.health = 30;
+		shrineMaiden.powerLevel = 50;
 		
-        heroTwo.health = 3;
-        heroTwo.powerLevel = 1;
+		Vampire.health = 150;
+		Vampire.powerLevel = 80;
 		
-        Console.WriteLine(heroOne.health);
-        Console.WriteLine(heroOne.powerLevel);
+		Console.WriteLine("Reimu Harukei has " + shrineMaiden.health + " health.");
+		Console.WriteLine("Her shrine maiden strength is " + shrineMaiden.powerLevel + "!");
 		
-        Console.WriteLine(heroTwo.health);
-        Console.WriteLine(heroTwo.powerLevel);
-    }
+		Console.WriteLine("Remilia Scarlet has " + Vampire.health + " health.");
+		Console.WriteLine("Her vampiric strength is " + Vampire.powerLevel + "!");
+	}
 }
 
 public class Hero {
-    public int health;
-    public int powerLevel;
-}//Based on the HelloWorld File, turn this into a class.
+	public int health = 50;
+	public int powerLevel = 50;
+	public string heroName = "Reimu Harukei";
+}
