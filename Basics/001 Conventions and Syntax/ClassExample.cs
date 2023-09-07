@@ -1,7 +1,8 @@
+using System;
+
 public class ClassExample
 {
     public int numberCountForHealth;
-    public Health playerHealth;
 }
 
 public class ClassWithVariables
@@ -16,4 +17,4 @@ public class ClassWithFunctions
     {
         Console.WriteLine("Hello World");
     }
-}   
+} 
