@@ -22,12 +22,16 @@ public class Program
 public class Operations {
 	public void DoMath (int value, int value2) {
 		var number = value + value2;
+		if (10 > 4) 
+{
+  Console.WriteLine("10 is greater than 4");
+}
 		Console.WriteLine(number);
 	}
 	
 	public void Compare (int value, int value2) {
 		if(value > value2) {
-			Console.WriteLine("True, the first greater.");
+			Console.WriteLine("True, the first is greater.");
 		} else {
 			Console.WriteLine("False, the second is greater.");
 		}
