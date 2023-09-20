@@ -4,13 +4,14 @@ public class Program
 {
 	public void Main()
 	{
-		string[] playerTypes = {"1", "2", "3", "4"};
+		string[] playerTypes = {"Pawn", "Pawn", "Pawn"};
 		
-		for (var i = 0; i < playerTypes.Length ; i++) ;
-		playerTypes[i] = "5";
+		for (var i = 0; i < playerTypes.Length ; i++) {
+		playerTypes[i] = "Queen";
 	}
 	
 	foreach (var playerTypes in playerTypes) {
-		Console.Writeline(playerType);
+		Console.WriteLine(playerTypes);
 	}
+}
 }
