@@ -20,7 +20,23 @@ namespace GuessingGame
 			
 			while (!isCorrectGuess)
 			{
+				Console.WriteLine("Please enter your guess.");
+				int guess = Convert.ToInt32(Console.ReadLine());
 				
+				if(guess > randomNum)
+				{
+					Console.WriteLine("Your guess is to high.");
+				}
+				else if(guess < randomNum)
+				{
+					Console.WriteLine("Your guess is to low.");
+				}
+			else	
+			{
+				Console.WriteLine("Correct!");
+				isCorrectGuess = true;
+			}
+				Console.WriteLine("Congrats, you won the game!");
 			}
 			
 			Console.ReadKey();
