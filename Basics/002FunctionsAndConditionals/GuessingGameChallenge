@@ -1,0 +1,10 @@
+using System;
+
+namespace GuessingGame
+{
+	public class Program
+	{
+        public void Main()
+    }
+
+}
