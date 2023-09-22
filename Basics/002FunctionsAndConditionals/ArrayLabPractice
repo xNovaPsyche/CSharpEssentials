@@ -1,17 +1,26 @@
 using System;
 
-public class Program
+	public class Program
 {
-	public void Main()
-	{
-		string[] playerTypes = {"Pawn", "Pawn", "Pawn"};
-		
-		for (var i = 0; i < playerTypes.Length ; i++) {
-		playerTypes[i] = "Queen";
+	static void Main(string[] args)
+        {
+            int n, x, y, z;
+            n = 5;
+            for (x=1; x <= n; x++) 
+            {
+               
+                for (y = 1; y <= n; y++)
+                {
+                    Console.Write(" ");
+                }
+                
+                for (z = 1; z <= x; z++)
+                {
+                    Console.Write("1");
+                }
+                
+                Console.WriteLine();
+            }
+            
+        }
 	}
-	
-	foreach (var playerTypes in playerTypes) {
-		Console.WriteLine(playerTypes);
-	}
-}
-}
